@@ -20,6 +20,8 @@ public class Main {
         address.setStreet("Arkham street 1");
         address.setPostCode("0987");
 
+        Project project = new Project();
+        project.setTitle("Gotham PD");
 
         Employee employee = new Employee();
         employee.setFirstName("James");
@@ -30,9 +32,6 @@ public class Main {
 
         employee.setBirthday(new Date(calendar.getTime().getTime()));
         employee.setAddress(address);
-
-        Project project = new Project();
-        project.setTitle("5678");
 
         Set<Project> projects = new HashSet<Project>();
         projects.add(project);
